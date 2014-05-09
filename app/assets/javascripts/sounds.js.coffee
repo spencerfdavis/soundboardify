@@ -1,5 +1,5 @@
 registerSounds = ->
-  $('.sound-board').each ->
+  $('.sound').each ->
     resource = gapi.hangout.av.effects.createAudioResource($(@).data('url'))
     sound = resource.createSound(
       loop: false
