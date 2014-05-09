@@ -29,7 +29,9 @@
       </head>
       <body>
         <%= yield %>
+        <%= javascript_include_tag "https://apis.google.com/js/platform.js" %>
         <%= javascript_include_tag "https://plus.google.com/hangouts/_/api/v1/hangout.js" %>
+        <%= javascript_include_tag 'application' %>
       </body>
     </html>
 
