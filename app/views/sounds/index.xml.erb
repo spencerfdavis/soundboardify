@@ -1,5 +1,5 @@
 <div id='soundboardify' style='visibility:hidden;'>
   <% @sounds.each do |sound| %>
-    <img src="<%= sound.image_url %>" class="sound" alt="<%= sound.name %>" data-url="<%= sound.url %>" />
+    <img src="<%= sound.image_url %>" class="sound" title="<%= sound.name %>" data-url="<%= sound.url %>" />
   <% end %>
 </div>
