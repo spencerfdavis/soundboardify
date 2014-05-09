@@ -1,0 +1,24 @@
+// Place all the styles related to the Sounds controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#soundboardify
+  height: 100%
+  padding: 12px
+  background-color: rgb(24, 24, 24)
+  border-left: 2px solid rgba(255, 255,255,0.1)
+
+  .sound
+    display: inline-block
+    width: 70px
+    height: 70px
+    margin: 8px
+    border-radius: 100%
+    transition: all .05s ease-in-out
+    cursor: pointer
+
+    &:hover
+      transform: scale(1.2)
+
+    &:active
+      transform: scale(1)
