@@ -7,6 +7,7 @@
   padding: 12px
   background-color: rgb(24, 24, 24)
   border-left: 2px solid rgba(255, 255,255,0.1)
+  overflow-y: scroll
 
   .sound
     display: inline-block
@@ -14,11 +15,11 @@
     height: 70px
     margin: 8px
     border-radius: 100%
-    transition: all .05s ease-in-out
+    -webkit-transition: all .05s ease-in-out
     cursor: pointer
 
     &:hover
-      transform: scale(1.2)
+      -webkit-transform: scale(1.2)
 
     &:active
-      transform: scale(1)
+      -webkit-transform: scale(1)
