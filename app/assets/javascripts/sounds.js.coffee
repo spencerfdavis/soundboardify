@@ -7,7 +7,6 @@ registerSounds = ->
     )
 
     $(@).click (e) ->
-      if 
       sound.play()
 
 init = ->
