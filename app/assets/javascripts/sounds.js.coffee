@@ -4,6 +4,7 @@ registerSounds = ->
     sound = resource.createSound(
       loop: false
       localOnly: false
+      volume: 1
     )
 
     $(@).click (e) ->
