@@ -3,10 +3,11 @@ registerSounds = ->
     resource = gapi.hangout.av.effects.createAudioResource($(@).data('url'))
     sound = resource.createSound(
       loop: false
-      localOnly: false
+      global: true
     )
 
     $(@).click (e) ->
+      if 
       sound.play()
 
 init = ->
