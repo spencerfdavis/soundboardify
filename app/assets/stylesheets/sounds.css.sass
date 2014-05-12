@@ -16,7 +16,31 @@
     color: rgba(255,255,255,.6)
     text-transform: uppercase
 
+  .sound-wrap
+    overflow: hidden
+    display: inline-block
+    position: relative
+    width: 70px
+    height: 70px
+
+  .sound-title
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    font-size: 1rem
+    color: white
+    visibility: none
+    width: 100%
+    height: 100%
+
+    &:hover
+      visibility: visible
+
   .sound
+    position: absolute
+    left: 0
+    top: 0
     display: inline-block
     width: 70px
     height: 70px
