@@ -8,7 +8,9 @@ registerSounds = ->
     )
 
     $(@).click (e) ->
+      gapi.hangout.av.setMicrophoneMute(muted: true)
       sound.play()
+      setTimeout(-> gapi.hangout.av.setMicrophoneMute(muted: false), 5000)
 
 init = ->
   gapi.hangout.onApiReady.add (eventObj) ->
