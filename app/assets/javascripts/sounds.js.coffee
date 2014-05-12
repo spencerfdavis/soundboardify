@@ -4,9 +4,13 @@ registerSounds = ->
     audio = document.createElement("audio")
     duration = 5000
     audio.ondurationchange = (event) ->
-      duration = event.target.duration
+      duration = event.target.duration * 1000
 
     audio.src = resource.getUrl()
+    audio.play()
+    setTimeout ->
+      audio.pause()
+    , 1
 
     sound = resource.createSound(
       loop: false
