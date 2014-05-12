@@ -3,7 +3,7 @@ registerSounds = ->
     resource = gapi.hangout.av.effects.createAudioResource($(@).data('url'))
     audio = document.createElement("audio")
     duration = 5000
-    audio.ondurationchange (event) ->
+    audio.ondurationchange = (event) ->
       duration = event.target.duration
 
     audio.src = resource.getUrl()
